@@ -1,6 +1,6 @@
 ## Plot forecast
 ## Other stuff
-$url="http://api.openweathermap.org/data/2.5/forecast?id= " + $CITYID" + &appid=" + $apikey+"&units=imperial"
+$url="http://api.openweathermap.org/data/2.5/forecast?id= " + $CITYID + "&appid=" + $apikey+"&units=imperial"
 $webread=invoke-webrequest $url
 $data=convertfrom-json $webread.content
 
