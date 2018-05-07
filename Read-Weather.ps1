@@ -6,7 +6,7 @@ $ip=get-WmiObject Win32_NetworkAdapterConfiguration|Where {$_.Ipaddress.length -
 $ip.ipaddress[0] 
 # From : https://blogs.technet.microsoft.com/heyscriptingguy/2014/04/10/powertip-use-powershell-to-get-ip-addresses/
 
-if ($address = "REMOVED") { #If I'm in Lemont, use this City ID
+if ($address -eq "REMOVED") { #If I'm in Lemont, use this City ID
 	$cityID="REMOVED"
 	$cityname = "REMOVED"
 } else { #Otherwise, assume I'm in "REMOVED"
