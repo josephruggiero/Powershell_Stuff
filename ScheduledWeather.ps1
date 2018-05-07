@@ -4,7 +4,7 @@ $IPaddress=$ip.ipaddress[0]
 # From : https://blogs.technet.microsoft.com/heyscriptingguy/2014/04/10/powertip-use-powershell-to-get-ip-addresses/
 
 
-if ($address = "REMOVED") { #If I'm in "REMOVED", use this IP for the photon
+if ($address -eq "REMOVED") { #If I'm in "REMOVED", use this IP for the photon
 	$photonIP="REMOVED"
 } else { #otherwise, assume I'm in "REMOVED", and use the "REMOVED" IP for the photon
 	$photonIP="REMOVED"
